@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DISCORD CLONE</title>
+	<link rel="stylesheet" type="text/css" href="css/discord.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+	<style type="text/css">
+		#header{
+	width: 100%;
+	height: 100vh;
+	background-image: url(im/dis.jpg);
+	background-size: cover;
+	background-position: center;
+}
+@media only screen and (max-width: 600px){
+	#header{
+		background-image: url(im/dis.jpg);
+	}
+	#header nav img{
+		width: 50px;
+		margin-left: -35px;
+		height: 30px;
+	}
+	.btn{
+		position: absolute;
+		top: -12%;
+		width: 80px;
+	}
+	 #header nav a{
+	 position: relative;
+	 top: 2%;
+	 font-weight: 100;
+	 margin-left: -13%;
+	 }
+	.text h1{
+		position: absolute;
+		font-size: 32px;
+		padding: 1px 10%;
+		left: -5%;
+		top: 20%;
+	}
+	.login{
+		position: absolute;
+		left: 75%;
+		top: 3%;
+	}
+	.text p{
+	position: absolute;
+		font-size: 15px;
+		top: 23%;
+		left: -2%;	
+		text-align: left;
+	}
+	.btn1{
+		position: absolute;
+		top: -37%;
+		left: -1%;
+		font-size: 17px;
+		border-radius: 50px;
+	}
+	.btn2{
+		position: absolute;
+		top: 64%;
+		left: 2%;
+		font-size: 18px;
+		border-radius: 50px;
+}
+.icons div{
+	display: flex;
+	cursor: pointer;
+	color: whitesmoke;
+}
+#header .check{
+	position: absolute;
+    top: 1%;
+	right: -110%;
+	width: 18rem;
+	border-radius: .5rem;
+	background: #fff;
+	height: 90vh;
+}
+#header .check a{
+	font-size: 1rem;
+	margin:-20% 3rem .1rem;
+	left: -30%;
+	top: -4%;
+	color: black;
+ display: flex;
+ text-align: left;
+}
+#menu:checked ~ .check{
+	right: .1rem;
+		z-index: 100;
+		width: 19rem;
+}
+}
+@media only screen and (max-width: 600px){
+.row .col-1 img{
+	width: 360px;
+	margin-left: 0px;
+	height: 300px;
+}
+.row .col-2 h1{
+	font-size: 18px;
+	width:400px;
+	margin: 30px 3px;
+}
+.row .col-2 p{
+	font-size: 14px;
+	margin: -20px -5px;
+} 
+}
+@media only screen and (max-width: 600px){
+
+.row .col-2 img{
+	width: 360px;
+	margin: -60px 3px;
+	height: 300px;
+}
+.row .col-1 h1{
+	font-size: 18px;
+	width:400px;
+	margin: -80px 3px;
+}
+.row .col-1 p{
+	font-size: 14px;
+	margin: 90px -5px;
+} 
+.phone{
+	width: 500px;
+	height: 160vh;
+}
+.phone h1{
+	font-size: 25px;
+	margin: 0 40px;
+	text-align: left;
+}
+.phone p{
+	font-size: 15px;
+	margin: 20px 40px;
+	text-align: left;
+}
+.phone img{
+position: relative;
+left: -62%;
+border-radius: 20px;
+width: 400px;
+height: 50vh;
+}
+.phone h2{
+	font-size: 23px;
+	width: 400px;
+	margin: 90px 70px;
+}
+.phone a{
+font-size: 19px;
+margin: 10px -140px;
+padding: 20px 20%;
+}
+.footer{
+	height: 190vh;
+	width: 500px;
+}
+.col-a a{
+	display: inline-flex;
+	position: relative;
+	left: 1%;
+	margin: -25px -7px;
+	padding: 7px;
+}
+.col-b,.col-3{
+	position: relative;
+	left: -10%;
+	margin: -20px ;
+}
+.col-4,.col-5{
+	position: relative;
+	left: -5%;
+	margin: 100px 25px;
+}
+}
+
+
+	</style>
+<div id="header">
+	<div class="container">
+		<nav>
+			<input type="checkbox" id="menu" style="display: none;">
+			<img src="im/logo3.png">
+			<a href="#" style="color: white; position: absolute; left: 140px; font-size: 20px; font-weight: 900; text-decoration: none;">Discord</a>
+			<label for="menu"><div class="fa-sharp fa-solid fa-xmark" style="position: absolute; left: 91%; top: 1%; font-size: 25px; cursor: pointer; display: none;"></div></label>
+				<ul class="check">
+					<li><a href="#" style="color: black; font-size: 28px; font-weight: 800; text-decoration: none; margin: 6% 35%; display: none;">Discord</a></li>
+					<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">Download</a></li>
+				<li><a href="#">Nitro</a></li>
+				<li><a href="#">Discover</a></li>
+				<li><a href="#">Safety</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<div class="login">
+				<a href="" class="btn">log in</a>
+			</div>
+		</nav>
+		<div class="icons">
+		<label for="menu"><div class="fa-solid fa-bars"></div></label>
+	</div>
+		<div class="text">
+		<h1>IMAGINE A PLACE...</h1>
+		<p>...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+		<a href="#" class=" btn1"><i class="fa-solid fa-download"></i>Download for windows</a>
+		<a href="#" class=" btn2">Open Discord in your Browser</a>
+	</div>
+</div>
+</div>
+<div class="partimg">
+	<div class="container1">
+		<div class="row">
+	<div class="col-1">
+		<img src="im/part.png" width="500px" height="400px">
+	</div>
+	<div class="col-2">
+		<h1>Create an invite-only place where you belong</h1>
+		<p>Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without<br> clogging up a group chat.
+</p>
+</div>
+</div>
+	</div>
+</div>
+
+<div class="contain">
+	<div class="container1">
+		<div class="row">
+			<div class="col-1">
+				<h1>Where hanging out is easy</h1>
+				<p>Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+			</div>
+			<div class="col-2">
+				<img src="im/chat.jpg" width="500px" height="400px">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="partimg">
+	<div class="container1">
+		<div class="row">
+	<div class="col-1">
+		<img src="im/mess.gif" width="500px" height="400px">
+	</div>
+	<div class="col-2">
+		<h1>From few to a fandom</h1>
+<p>Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+</p>
+</div>
+</div>
+	</div>
+</div>
+<div class="phone">
+	<h1>RELIABLE TECH FOR STAYING CLOSE</h1>
+	<p>Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their<br> games, or gather up and have a drawing session with screen share.</p>
+	<img src="im/phone.avif">
+	<h2>Ready to start your journey?</h2>
+	<a href="#" class="button"><i class="fa-solid fa-download"></i>Download for windows</a>
+</div>
+<div class="footer">
+	<div class="container2">
+		<div class="row1">
+			<div class="col-a">
+				<select>
+					<option value="eng">български</option>
+					<option value="eng">Čeština</option>
+					<option value="eng">Dansk</option>
+					<option value="eng">Deutsch</option>
+					<option value="eng">Deutsch</option>
+					<option value="eng">Ελληνικά</option>
+					<option value="eng">English, USA</option>
+					<option value="eng">Español</option>
+					<option value="eng">Suomi</option>
+					<option value="eng">Français</option>
+					<option value="eng">हिंदी</option>
+					<option value="eng">Hrvatski</option>
+					<option value="eng">Magyar</option>
+					<option value="eng">Italiano</option>
+					<option value="eng">Lietuviškai</option>
+					<option value="eng">Nederlands</option>
+					<option value="eng">Norwegian</option>
+					<option value="eng">Polski</option>
+					<option value="eng">Português do Brasil</option>
+					<option value="eng">Română</option>
+					<option value="eng">Pусский</option>
+					<option value="eng">Svenska</option>
+					<option value="eng">ไทย</option>
+					<option value="eng">Türkçe</option>
+					<option value="eng">Українська</option>
+					<option value="eng">Tiếng Việt</option>
+					<option value="eng">中文</option>
+					<option value="eng">繁體中文</option>
+					<option value="eng"></option>
+				</select>
+				<a href="#"><i class="fa-brands fa-twitter"></a></i>
+				<a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+				<a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+				<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+			</div>
+			<div class="col-b">
+				<h4>Product</h4>
+            <ul>
+            	<li><a href="#">Download</a></li>
+            	<li><a href="#">Nitro</a></li>
+            	<li><a href="#">Status</a></li>
+            	<li><a href="#">App Directory</a></li>
+            	<li><a href="#">New Mobile Experience</a></li>
+            </ul>
+			</div>
+			<div class="col-3">
+				<h4>Company</h4>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Jobs</a></li>
+					<li><a href="#">Brand</a></li>
+					<li><a href="#">Newsroom</a></li>
+					<li><a href="#">Full Release</a></li>
+				</ul>
+			</div>
+			<div class="col-4">
+				<h4>Resources</h4>
+				<ul>
+					<li><a href="#">College</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Safety</a></li>
+					<li><a href="#">Blogs</a></li>
+					<li><a href="#">FeedBack</a></li>
+					<li><a href="#">Streamkit</a></li>
+					<li><a href="#">Creators</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Developers</a></li>
+					<li><a href="#">Gaming</a></li>
+					<li><a href="#">Official 3rd Party Merch</a></li>
+				</ul>
+			</div>
+			<div class="col-5">
+				<h4>Policies</h4>
+				<ul>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Cookie Settings</a></li>
+					<li><a href="#">Guidlines</a></li>
+					<li><a href="#">Acknowledgment</a></li>
+					<li><a href="#">Licenses</a></li>
+					<li><a href="#">Company Information</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+		<hr style="color: whitesmoke;">
+		<div class="row">
+		<div class="col-a">
+			<h5 style="color:white; font-size: 21px;font-weight: 1000;">Discord</h5>
+		</div>
+		<div class="col-5">
+			<a href="#" class="btna">Sign up</a>
+		</div>
+	</div>
+	</div>
+</div>
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+	</script>
+</body>
+</html>
